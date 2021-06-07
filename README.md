@@ -1,2 +1,44 @@
-# DevRel
-All things DevRel!
+# Welcome to cLabs DevRel Repo!
+This private repository will be used to provide updates to documentation, project work, and general support for the wider Celo developer communities that DevRel supports.
+
+## DevRel Mission 
+The Developer Relations team aims to support and grow an open and inviting developer community and ecosystem focused on supporting and inspiring developers to build on the Celo Platform. 
+
+Developer Relations will work to showcase the Celo Platform’s key benefits like a lightweight mobile client infrastructure and Ethereum network compatibility. 
+
+The team will also work to produce and maintain a quality developer experience through high quality technical documentation, ergonomic tooling, and a suite of examples and tutorials that help developers save time and effort and enable building and launching their projects quickly and safely (good security defaults).
+
+## Purpose: developer adoption
+DevRel utilizes the Celo community to obtain data necessary to produce materials to ensure the community has proper resources to utilize the Celo blockchain platform. 
+
+DevRel provides community support through **education**, **community support**, and **Events** to foster Celo platform **adoption**. 
+
+```mermaid
+graph LR
+A[[DevRel]] --> B(Education)
+A --> C(Community Support)
+B --> Z{Adoption}
+A --> D(Events)
+C --> Z
+D --> Z
+```
+
+# Repository layout
+
+Folders are organized within the main three categories that Developer Relations supports. 
+
+- Education
+- Community support
+- Events
+
+Subfolders within these categories will support project work that can be organized and managed utilizing GitHub projects.
+
+_Repository branches can be merged into master branch once a pull request has been submitted and approved by a reviewer._
+
+## Developer Relations Team
+
+- Eric Nakagawa
+- Brandy Camacho
+- Jarrell James
+- Josh Crites
+- Yaz Khoury
