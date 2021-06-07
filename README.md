@@ -13,15 +13,10 @@ DevRel utilizes the Celo community to obtain data necessary to produce materials
 
 DevRel provides community support through **education**, **community support**, and **Events** to foster Celo platform **adoption**. 
 
-```mermaid
-graph LR
-A[[DevRel]] --> B(Education)
-A --> C(Community Support)
-B --> Z{Adoption}
-A --> D(Events)
-C --> Z
-D --> Z
-```
+
+![image](https://user-images.githubusercontent.com/2653576/121096525-12d27d00-c78e-11eb-9ef7-7a36454be699.png)
+
+
 
 # Repository layout
 
