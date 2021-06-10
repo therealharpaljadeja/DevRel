@@ -43,5 +43,5 @@ File issue reports or requests within GitHub
 - Jarrell James
 - Yaz Khoury
 - Brandy Camacho
-- Joy Nyzio
+- Joe Nyzio
 
