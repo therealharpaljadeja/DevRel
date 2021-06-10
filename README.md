@@ -20,14 +20,20 @@ DevRel provides community support through **education**, **community support**, 
 
 # Repository layout
 
-Folders organized by categories. Example:
+Folders organized by categories. 
 
-- Education
-- Community support
-- Events
-- ...
+Example:
+
+ - Education
+ - Community support
+ - Events
+
+*Tip: Checkout the README.md in each directory!*
 
 _Repository branches can be merged into master branch once a pull request has been submitted and approved by a reviewer._
+
+# Report Issues
+File issue reports or requests within GitHub
 
 ## Developer Relations Team
 
