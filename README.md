@@ -20,20 +20,21 @@ DevRel provides community support through **education**, **community support**, 
 
 # Repository layout
 
-Folders are organized within the main three categories that Developer Relations supports. 
+Folders organized by categories. Example:
 
 - Education
 - Community support
 - Events
-
-Subfolders within these categories will support project work that can be organized and managed utilizing GitHub projects.
+- ...
 
 _Repository branches can be merged into master branch once a pull request has been submitted and approved by a reviewer._
 
 ## Developer Relations Team
 
 - Eric Nakagawa
-- Brandy Camacho
-- Jarrell James
 - Josh Crites
+- Jarrell James
 - Yaz Khoury
+- Brandy Camacho
+- Joy Nyzio
+
