@@ -1,0 +1,23 @@
+{
+  "name": "celo_blockchain_sandbox",
+  "version": "0.0.1",
+  "description": "Crafting a raw transaction using Ethereum base tooling to create, sign, and broadcast a transaction to the Celo network.",
+  "main": "raw-transaction-example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "celo",
+    "raw",
+    "transaction"
+  ],
+  "author": "Brandy Lee Camacho",
+  "license": "ISC",
+  "dependencies": {
+    "@ethereumjs/common": "^2.4.0",
+    "@ethereumjs/tx": "^3.3.0",
+    "ethereumjs-tx": "^2.1.2",
+    "ethereumjs-util": "^7.1.0",
+    "web3": "^1.5.1"
+  }
+}
