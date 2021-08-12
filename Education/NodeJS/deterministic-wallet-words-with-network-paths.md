@@ -30,11 +30,11 @@ A derivation path is a piece of data that tells a Hierarchical Deterministic (HD
 
 ## Process
 
-1. Generate test wallet with deterministic wallet words
-2. Utilize Celo CLI to reveal wallet address, private & public keys
-3. Configure node path flag with testnet to aquire Celo account details
-4. Configure network derivations paths for Eth to aquire Eth account details
-5. Compare the account addresses generated from the same set of wallet words
+ 1. [Generate test wallet with deterministic wallet words](#1-generate-your-test-account "1. Generate test wallet with deterministic wallet words")
+ 2. [Utilize Celo CLI to reveal wallet address, private & public keys](#2-celo-cli "2. Utilize Celo CLI to reveal wallet address, private & public keys")
+ 3. [Configure node path flag with testnet to aquire Celo account details](#3-creating-a-celo-native-wallet-address "3. Configure node path flag with testnet to aquire Celo account details")
+ 4. [Configure network derivations paths for Eth to aquire Eth account details](#4-utilizing-celo-cli-to-retrieve-native-ethereum-wallet-address "4. Configure network derivations paths for Eth to aquire Eth account details")
+ 5. [Compare the account addresses generated from the same set of wallet words](#5-whats-the-difference "5. Compare the account addresses generated from the same set of wallet words")
 
 ## 1: Generate your test account
 
@@ -55,7 +55,7 @@ Save wallet words to **account.txt** within the working directory where you will
 *__Secutiy risk!__*
 Do not use the above wallet words for real value
 
-### 2: Celo CLI
+## 2: Celo CLI
 Celo CLI allows connectivity to the network to query and interact with the Celo blockchain. The tool is helpful for several types of tasks such as account creation, account management, and performing transactions.
 
 We will use the Celo CLI tool to test the restoration of accounts using deterministic wallet words on both Celo and Ethereum network paths to compare the two.
@@ -76,14 +76,14 @@ The account command requires a network node to query. The Celo CLI tool allows n
 Learn more regarding networks types: https://docs.celo.org/getting-started/wallets/using-metamask-with-celo/manual-setup
 
 
-### 3: Creating a Celo native wallet address
+## 3: Creating a Celo native wallet address
 To create a Celo native wallet from wallet words, use Celo CLI to restore the wallet and post response with the wallet address, private & public keys.
 
-#### Command
+### Command
 
 `celocli account:new --mnemonicPath account.txt --node https://alfajores-forno.celo-testnet.org`
 
-#### Response
+### Response
 
 ```json
 mnemonic: barrel bubble comic cause submit raccoon table sort nominee fire dismiss swim
@@ -95,7 +95,7 @@ address: 0xfBBF296f06E455F5b636Cd57371056Df21470c1e
 
 __*Take note of the account address:* 0xfBBF296f06E455F5b636Cd57371056Df21470c1e__
 
-### 4: Utilizing Celo CLI to retrieve native Ethereum wallet address
+## 4: Utilizing Celo CLI to retrieve native Ethereum wallet address
 To restore an Ethereum wallet from the above wallet words, use Celo CLI to restore the wallet and post response with the wallet address, private & public keys.
 The critical difference between the commands is the ` --derivationPath "eth"` flag.
 
@@ -108,12 +108,12 @@ The --derivationPath flag performs network path switching. Heres a look at the d
 Learn more: https://docs.celo.org/developer-guide/integrations/checklist#key-derivation
 
 *When using the network path with wallet words, you modify the key generation type to be performed specifically to the network of choice. *
-#### Command
+### Command
 
 `celocli account:new --mnemonicPath account.txt --derivationPath "eth" --node https://alfajores-forno.celo-testnet.org`
 
 
-#### Response
+### Response
 
 ```json
 mnemonic: barrel bubble comic cause submit raccoon table sort nominee fire dismiss swim
@@ -125,7 +125,7 @@ address: 0xAB83EC888470f7e582679f6f85624a7A50f49E09
 
 __Take note of the account address: 0xAB83EC888470f7e582679f6f85624a7A50f49E09_
 
-### 5: Whats the difference?
+## 5: Whats the difference?
 
 Using deterministic wallet words to restore account with the network derivation paths impact the generation of private/public keys which control wallet addresses.
 
