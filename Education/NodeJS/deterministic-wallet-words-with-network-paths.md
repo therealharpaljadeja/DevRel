@@ -32,9 +32,9 @@ A derivation path is a piece of data that tells a Hierarchical Deterministic (HD
 
 1. Generate test wallet with deterministic wallet words
 2. Utilize Celo CLI to reveal wallet address, private & public keys
-  1. Configure node path flag with testnet to aquire Celo account details
-  2. Configure network derivations paths for Eth to aquire Eth account details
-3. Compare the account addresses generated from the same set of wallet words
+3. Configure node path flag with testnet to aquire Celo account details
+4. Configure network derivations paths for Eth to aquire Eth account details
+5. Compare the account addresses generated from the same set of wallet words
 
 ## 1: Generate your test account
 
@@ -76,7 +76,7 @@ The account command requires a network node to query. The Celo CLI tool allows n
 Learn more regarding networks types: https://docs.celo.org/getting-started/wallets/using-metamask-with-celo/manual-setup
 
 
-### Creating a Celo native wallet address
+### 3: Creating a Celo native wallet address
 To create a Celo native wallet from wallet words, use Celo CLI to restore the wallet and post response with the wallet address, private & public keys.
 
 #### Command
@@ -95,7 +95,7 @@ address: 0xfBBF296f06E455F5b636Cd57371056Df21470c1e
 
 __*Take note of the account address:* 0xfBBF296f06E455F5b636Cd57371056Df21470c1e__
 
-### Utilizing Celo CLI to retrieve native Ethereum wallet address
+### 4: Utilizing Celo CLI to retrieve native Ethereum wallet address
 To restore an Ethereum wallet from the above wallet words, use Celo CLI to restore the wallet and post response with the wallet address, private & public keys.
 The critical difference between the commands is the ` --derivationPath "eth"` flag.
 
@@ -125,7 +125,7 @@ address: 0xAB83EC888470f7e582679f6f85624a7A50f49E09
 
 __Take note of the account address: 0xAB83EC888470f7e582679f6f85624a7A50f49E09_
 
-### 3: Whats the difference?
+### 5: Whats the difference?
 
 Using deterministic wallet words to restore account with the network derivation paths impact the generation of private/public keys which control wallet addresses.
 
