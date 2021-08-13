@@ -14,18 +14,31 @@ A derivation path is a piece of data that tells a Hierarchical Deterministic (HD
 ## Requirements
 
 - Node v12
- - *Optional: *Use Node version manager to set version of node to v12:
+
+*Tip: *Use Node version manager to set version of node to v12:
  https://github.com/nvm-sh/nvm
+    
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+Running either of the above commands downloads a script and runs it. The script clones the nvm repository to ~/.nvm, and attempts to add the source lines from the snippet below to the correct profile file (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
 
 
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-	nvm install v12
-    nvm use v12
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+```bash
+nvm install v12 | nvm use v12
+```
 
 **Install Celo CLI**
 
-`npm install -g @celo/celocli`
+```bash
+npm install -g @celo/celocli
+```
 
 
 ## Process
@@ -40,7 +53,9 @@ A derivation path is a piece of data that tells a Hierarchical Deterministic (HD
 
 Use Celo CLI to create accounts:
 
-`celocli account:new`
+```bash
+celocli account:new
+```
 
 Celo CLI will create a new account with wallet words.
 
@@ -48,7 +63,9 @@ Note: You can use other tools such as Metamask to generate your test wallet word
 
 If you want to skip this process, you can use the wallet words below.
 
-`barrel bubble comic cause submit raccoon table sort nominee fire dismiss swim`
+```
+barrel bubble comic cause submit raccoon table sort nominee fire dismiss swim
+```
 
 Save wallet words to **account.txt** within the working directory where you will perform the Celo CLI commands.
 
@@ -62,16 +79,22 @@ We will use the Celo CLI tool to test the restoration of accounts using determin
 
 Tip: To list Celo CLI commands:
 
-`celocli commands`
+```bash
+celocli commands
+```
 
 Tip: To list Celo CLI function commands:
 _Account example_
-`celocli account help`
+```bash
+celocli account help
+```
 
 ### Network nodes
 The account command requires a network node to query. The Celo CLI tool allows network node control utilizing the command flag "--node" to connect to a specific network; in our use case, the testnet.
 
-`--node https://alfajores-forno.celo-testnet.org`
+```bash
+--node https://alfajores-forno.celo-testnet.org
+```
 
 Learn more regarding networks types: https://docs.celo.org/getting-started/wallets/using-metamask-with-celo/manual-setup
 
@@ -81,11 +104,13 @@ To create a Celo native wallet from wallet words, use Celo CLI to restore the wa
 
 ### Command
 
-`celocli account:new --mnemonicPath account.txt --node https://alfajores-forno.celo-testnet.org`
+```bash
+celocli account:new --mnemonicPath account.txt --node https://alfajores-forno.celo-testnet.org
+```
 
 ### Response
 
-```json
+```bash
 mnemonic: barrel bubble comic cause submit raccoon table sort nominee fire dismiss swim
 accountAddress: 0xfBBF296f06E455F5b636Cd57371056Df21470c1e
 privateKey: 2dba937c5a0606134c29cd794f736b60960b56d4539474f55ee4ae8dd3d9006a
@@ -110,12 +135,14 @@ Learn more: https://docs.celo.org/developer-guide/integrations/checklist#key-der
 *When using the network path with wallet words, you modify the key generation type to be performed specifically to the network of choice. *
 ### Command
 
-`celocli account:new --mnemonicPath account.txt --derivationPath "eth" --node https://alfajores-forno.celo-testnet.org`
+```bash
+celocli account:new --mnemonicPath account.txt --derivationPath "eth" --node https://alfajores-forno.celo-testnet.org
+```
 
 
 ### Response
 
-```json
+```bash
 mnemonic: barrel bubble comic cause submit raccoon table sort nominee fire dismiss swim
 accountAddress: 0xAB83EC888470f7e582679f6f85624a7A50f49E09
 privateKey: a877c71c148fa4b857b2f52434bc7e34b7215039ac1ea20f8510ddc6e32fd966
