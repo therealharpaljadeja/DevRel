@@ -131,8 +131,8 @@ Using deterministic wallet words to restore account with the network derivation 
 
 In this guide we restored two types of accounts, one for Celo and Ethereum. Earlier we suggested to take note of the address information, lets take a closer look at those:
 
-Celo: 0xfBBF296f06E455F5b636Cd57371056Df21470c1e
-Ethereum: 0xAB83EC888470f7e582679f6f85624a7A50f49E09
+- Celo: 0xfBBF296f06E455F5b636Cd57371056Df21470c1e
+- Ethereum: 0xAB83EC888470f7e582679f6f85624a7A50f49E09
 
 As you can tell, there is a clear difference between the two accounts. Dig deeper, and you will notice the difference between the private/public keys. As described earlier, this is a direct result of utilizing the network derivation paths specific to each blockchain network that impact the generation of wallet keys.
 
