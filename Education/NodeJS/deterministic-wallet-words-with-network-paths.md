@@ -31,7 +31,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 ```
 
 ```bash
-nvm install v12 | nvm use v12
+nvm install v12
+nvm use v12
 ```
 
 **Install Celo CLI**
