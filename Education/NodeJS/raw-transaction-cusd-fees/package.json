@@ -1,0 +1,19 @@
+{
+  "name": "raw-transaction-cusd-fees",
+  "version": "0.0.1",
+  "description": "Create a raw transaction with fees paid in cUSD & broadcast to the Celo blockchain network",
+  "main": "index.js",
+  "scripts": {
+    "start": "node raw-transaction-cusd-fees-example.js"
+  },
+  "author": "Brandy Camacho",
+  "license": "ISC",
+  "dependencies": {
+    "@celo-tools/celo-ethers-wrapper": "0.0.5",
+    "ethers": "^5",
+    "web3": "^1.5.2"
+  },
+  "peerDependencies": {
+    "ethers": "^5"
+  }
+}
