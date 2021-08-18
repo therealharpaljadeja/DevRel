@@ -30,9 +30,9 @@ creation of a raw transaction. Next, we will sign the transaction with
 the sending account private key and broadcast transaction to the network.
 
 Dependancies source:
-https://github.com/celo-tools/celo-ethers-wrapper
-https://github.com/ethers-io/ethers.js/
-https://github.com/ChainSafe/web3.js
+- https://github.com/celo-tools/celo-ethers-wrapper
+- https://github.com/ethers-io/ethers.js/
+- https://github.com/ChainSafe/web3.js
 
 ## Local Signing with Web3
 
