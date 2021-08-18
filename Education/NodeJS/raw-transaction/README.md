@@ -2,6 +2,22 @@
 Crafting a raw transaction using Ethereum base tooling to create, sign, and
 broadcast a transaction to the Celo network.
 
+## Description
+Craft a raw transaction using Ethereum base tooling to create, sign, and broadcast
+transaction to the Celo network.
+
+In this example, we are using ethereumjs-tx to configure parameters for the
+creation of a raw transaction. Next, we will sign the transaction with
+the sending account private key. Once the transaction is signed, its ready
+for broadcasting to network. For this example, we will use web3 to broadcast.
+
+
+Dependancies source:
+https://github.com/ethereumjs/ethereumjs-common
+https://github.com/ethereumjs/ethereumjs-tx
+https://github.com/ChainSafe/web3.js
+
+
 ## Requirements
 NodeJS v12+
 
@@ -15,24 +31,6 @@ NodeJS v12+
 #### Run script
 
 ```node raw-transaction-example.js```
-
-## Description
-Craft a raw transaction using Ethereum base tooling to create, sign, and broadcast
-transaction to the Celo network.
-
-In this example, we are using ethereumjs-tx to configure parameters for the
-creation of a raw transaction. Next, we will sign the transaction with
-the sending account private key. Once the transaction is signed, its ready
-for broadcasting to network. For this example, we will use web3 to broadcast.
-
-Note: web3 can perform transactions. We are not utilizing this to show the
-ability to craft and sign a raw transaction which can be broadcasted to
-the network utilizing the serialize object.
-
-Dependancies source:
-https://github.com/ethereumjs/ethereumjs-common
-https://github.com/ethereumjs/ethereumjs-tx
-https://github.com/ChainSafe/web3.js
 
 ## Local Signing with Web3
 
@@ -87,17 +85,17 @@ gas_price_minimum = gas_price_minimum * (
 
 Source: https://docs.celo.org/celo-codebase/protocol/transactions/gas-pricing
 
-## Test account
+## Test accounts
 
-**privateKey:** 5e7b836918f7402eca73e387c1daa46a6a65d2755ae8cef8b4a9679eacc636e8
-**publicKey:** 0247b04fc1af5a80266ae656d2161285be320999a6f0e86c4a0928a74e1a1f5dcb
-**address: **0xe96D5b820a1D2b3CfA23ebDE3a4245654778A3FD
+- **privateKey:** 5e7b836918f7402eca73e387c1daa46a6a65d2755ae8cef8b4a9679eacc636e8
+- **publicKey:** 0247b04fc1af5a80266ae656d2161285be320999a6f0e86c4a0928a74e1a1f5dcb
+- **address: **0xe96D5b820a1D2b3CfA23ebDE3a4245654778A3FD
 
-**privateKey:** 12b01fe7d10929a13a008e88fb1c87d2f6feb876326b3bd9074582a781f05674
-**publicKey:** 03f18698d960408eb0a824c7157b64fc455ea9d85b7fcf3d612915b8c3abce4399
-**address: **0x24163C9Af4d5f0B16956db9486A21A5aaF2ec6DD
+- **privateKey:** 12b01fe7d10929a13a008e88fb1c87d2f6feb876326b3bd9074582a781f05674
+- **publicKey:** 03f18698d960408eb0a824c7157b64fc455ea9d85b7fcf3d612915b8c3abce4399
+- **address: **0x24163C9Af4d5f0B16956db9486A21A5aaF2ec6DD
 
-#### Test accounts can be created with CeloCLI tool
+#### Create test accounta with CeloCLI
 https://github.com/celo-org/celo-monorepo/tree/master/packages/cli
 
 ## Networks
