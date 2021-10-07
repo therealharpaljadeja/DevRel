@@ -5,13 +5,13 @@ broadcast a transaction to the Celo network.
 */
 
 
-// Ethereumjs dependancy configuration
+// Ethereumjs dependency configuration
 const createRawTransaction = require('ethereumjs-tx').Transaction;
 const Common = require('ethereumjs-common').default;
 const buffToHex = require('ethereumjs-util').bufferToHex;
 const privToAddress = require('ethereumjs-util').privateToAddress;
 
-//web3 dependancy configuration
+//web3 dependency configuration
 const Web3 = require('web3');
 const web3 = new Web3('https://alfajores-forno.celo-testnet.org');
 
