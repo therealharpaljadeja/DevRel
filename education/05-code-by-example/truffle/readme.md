@@ -188,7 +188,8 @@ module.exports = {
 
 __Note:__ Make sure to replace mnemonic with your own.
 
-8. deploy (or migrate) your contract to testnet as follows. By default, Truffle only deploys to the local developer network.
+8. deploy (or migrate) your contract to testnet as follows. By default, Truffle only deploys to the local developer network. 
+  [Testnet deployment example](https://alfajores-blockscout.celo-testnet.org/address/0x9442d52bF59e25C977d0920255d1E34a35ebbfCA/contracts)
 
 ```bash
 truffle deploy --network testnet
