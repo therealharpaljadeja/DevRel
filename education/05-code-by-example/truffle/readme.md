@@ -49,30 +49,30 @@ Celo is EVM compatible (Ethereum Virtual Machine). Most utilities from the ether
 To fund your testnet wallet navigate to https://celo.org/developers/faucet
 
 
-## Tutorial
+# Tutorial Steps
 
 
 1. Set up Truffle
 
-```javascript
+```bash
 npm install -g truffle
 ```
 
 2. Make an empty directory and navigate into it
 
-```javascript
+```bash
 cd DIRECTORY_NAME
 ```
 
 3. Initialize Truffle
 
-```javascript
+```bash
 truffle init
 ```
 
 4. Install HDWalletProvider
 
-```javascript
+```bash
 npm install --save @truffle/hdwallet-provider
 ```
 
@@ -189,11 +189,11 @@ __Note:__ Make sure to replace mnemonic with your own.
 
 8. deploy (or migrate) your contract to testnet as follows. By default, Truffle only deploys to the local developer network.
 
-```javascript
+```bash
 truffle deploy --network testnet
 ```
 or
-```javascript
+```bash
 truffle deploy --network testnet --reset
 ```
 
@@ -203,7 +203,7 @@ Important: Save contract addresses for future reference. If you lose it, proceed
 
 9. Set up Truffle console to testnet network:
 
-```javascript
+```bash
 truffle console --network testnet
 ```
 
