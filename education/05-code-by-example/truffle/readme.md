@@ -1,13 +1,13 @@
 
-# Learn to use Truffle with the Celo Blockchain!
+# Learn to use Truffle with the Celo Blockchain
 
 Within this repository is a working example utilizing the tutorial below. If you get stuck, review the source code to reference your environment and settings.
 
 ## Description
 In this tutorial you will learn to:
 
-- Configure Truffle Framework sandbox environment
-- Modify Truffle Framework to communicate with the Celo blockchain
+- Configure Truffle framework development environment
+- Modify Truffle framework to communicate with the Celo blockchain
   - Configured multiple network types.
     - local environment
     - testnet
@@ -39,7 +39,7 @@ truffle version
 - Wallet mnemonic phrase with testnet funds
 
 ### Note
-Celo utilizes a compatible EVM (Ethereum Virtual Machine). Most utilities from the ethereum eco-system will work with Celo. This includes wallets. Heres a list to get you started:
+Celo is EVM compatible (Ethereum Virtual Machine). Most utilities from the ethereum eco-system will work with Celo. This includes wallets. Heres a list to get you started:
 
 - https://celo.org/developers/wallet
 - [CeloCLI account:new](https://docs.celo.org/command-line-interface/introduction)
