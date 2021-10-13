@@ -61,6 +61,7 @@ npm install -g truffle
 2. Make an empty directory and navigate into it
 
 ```bash
+mkdir DIRECTORY_NAME
 cd DIRECTORY_NAME
 ```
 
