@@ -16,7 +16,7 @@ In this tutorial you will learn to:
 - Deploy (or migrate) a contract instance
 - Interact with contract instance via Truffle console
   - Call contract function (Read)
-  - Send contract function (Write)
+  - Call contract function (Write)
 
 This tutorial was tested with the following environment conditions:
 
@@ -228,7 +228,7 @@ web3.eth.contract(HelloCeloDevs_abi, contractAddress)
 HelloCeloDevs.deployed().then(function(instance){return instance.sayHello()});
 ```
 
-12. Invoke contract to __send__ the function and set your name
+12. Invoke contract to __call__ the function and set your name
 
 ```javascript
 HelloCeloDevs.deployed().then(function(instance){return instance.setName("YOUR_NAME")});
