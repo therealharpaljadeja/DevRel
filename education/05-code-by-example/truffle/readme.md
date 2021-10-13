@@ -27,7 +27,7 @@ This tutorial was tested with the following environment conditions:
 
 Note: You can check your environment by running the following command:
 
-```
+```javascript
 truffle version
 ```
 
@@ -54,25 +54,25 @@ To fund your testnet wallet navigate to https://celo.org/developers/faucet
 
 1. Set up Truffle
 
-```
+```javascript
 npm install -g truffle
 ```
 
 2. Make an empty directory and navigate into it
 
-```
+```javascript
 cd DIRECTORY_NAME
 ```
 
 3. Initialize Truffle
 
-```
+```javascript
 truffle init
 ```
 
 4. Install HDWalletProvider
 
-```
+```javascript
 npm install --save @truffle/hdwallet-provider
 ```
 
@@ -80,7 +80,7 @@ npm install --save @truffle/hdwallet-provider
 
 In ./contracts create a new contract called HelloCeloDevs.sol with the following code:
 
-```
+```javascript
 pragma solidity >=0.8.0;
 // SPDX-License-Identifier: MIT
 contract HelloCeloDevs {
@@ -133,7 +133,7 @@ contract HelloCeloDevs {
 
 In ./migrations, create a deployment script specifically named 2_deploy_contracts.js with the following code:
 
-```
+```javascript
 var HelloCeloDevsContract = artifacts.require("HelloCeloDevs");
 module.exports = function(deployer) {
     deployer.deploy(HelloCeloDevsContract, "hello");
@@ -143,7 +143,7 @@ module.exports = function(deployer) {
 
 7. Configure Celo networks in truffle-config.js, add the following snippet:
 
-```
+```javascript
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const MNEMONIC = 'crowd woman give sword trouble story weekend monitor circle cable humor super';
 
@@ -189,11 +189,11 @@ __Note:__ Make sure to replace mnemonic with your own.
 
 8. deploy (or migrate) your contract to testnet as follows. By default, Truffle only deploys to the local developer network.
 
-```
+```javascript
 truffle deploy --network testnet
 ```
 or
-```
+```javascript
 truffle deploy --network testnet --reset
 ```
 
@@ -203,38 +203,38 @@ Important: Save contract addresses for future reference. If you lose it, proceed
 
 9. Set up Truffle console to testnet network:
 
-```
+```javascript
 truffle console --network testnet
 ```
 
 10. Access your deployed contract instance via:
 
-```
+```javascript
 HelloCeloDevs.deployed().then(function(instance){return instance });
 ```
 
 The results is similar to the way web3 would work for contract instance. Here's an example:
 
-```
+```javascript
 let HelloCeloDevs_abi = ABI_HERE
 let contractAddress = ADDRESS_HERE
 web3.eth.contract(HelloCeloDevs_abi, contractAddress)
 ```
 11. Invoke contract to __call__ the function and say hello!
 
-```
+```javascript
 HelloCeloDevs.deployed().then(function(instance){return instance.sayHello()});
 ```
 
 12. Invoke contract to __send__ the function and set your name
 
-```
+```javascript
 HelloCeloDevs.deployed().then(function(instance){return instance.setName("YOUR_NAME")});
 ```
 
 13. Finally, Invoke contract function and say hello to obtain a response with your name.
 
-```
+```javascript
 HelloCeloDevs.deployed().then(function(instance){return instance.sayHello()});
 ```
 
