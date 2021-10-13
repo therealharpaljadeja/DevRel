@@ -237,3 +237,7 @@ HelloCeloDevs.deployed().then(function(instance){return instance.setName("Brandy
 ```
 HelloCeloDevs.deployed().then(function(instance){return instance.sayHello()});
 ```
+
+#### Your results should look similar to the screenshot below:
+![image](https://user-images.githubusercontent.com/2653576/137046171-1d9d9aab-d66e-43a9-95c8-3ebc6fd1d142.png)
+
