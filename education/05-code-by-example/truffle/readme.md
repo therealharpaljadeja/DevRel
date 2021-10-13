@@ -7,8 +7,8 @@ Within this repository is a working example utilizing the tutorial below. If you
 In this tutorial you will learn to:
 
 - Configure Truffle Framework sandbox environment
-- Modify Truffle Framework to communicate with Celo blockchain
-  - Configured with multiple networks.
+- Modify Truffle Framework to communicate with the Celo blockchain
+  - Configured multiple network types.
     - local environment
     - testnet
     - mainnet
