@@ -229,7 +229,7 @@ HelloCeloDevs.deployed().then(function(instance){return instance.sayHello()});
 12. Invoke contract to __send__ the function and set your name
 
 ```
-HelloCeloDevs.deployed().then(function(instance){return instance.setName("Brandy")});
+HelloCeloDevs.deployed().then(function(instance){return instance.setName("YOUR_NAME")});
 ```
 
 13. Finally, Invoke contract function and say hello to obtain a response with your name.
