@@ -17,10 +17,10 @@
  *
  */
 
- const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 
- const fs = require('fs');
- const mnemonic = fs.readFileSync(".secret").toString().trim();
+// Read more about how to use .env here: https://www.npmjs.com/package/dotenv
+require('dotenv').config({ path: '/custom/path/to/.env' })
  
  module.exports = {
    /**
@@ -46,14 +46,14 @@
     },
     alfajores: {
       provider: function() {
-        return new HDWalletProvider(mnemonic, "https://alfajores-forno.celo-testnet.org")
+        return new HDWalletProvider(process.env.MNEMONIC, "https://alfajores-forno.celo-testnet.org")
       },
       network_id: 44787,
       gas: 20000000      //make sure this gas allocation isn't over 20M, which is the max
     },
     celo: {
       provider: function() {
-        return new HDWalletProvider(mnemonic, "https://forno.celo.org")
+        return new HDWalletProvider(process.env.MNEMONIC, "https://forno.celo.org")
       },
       network_id: 42220,
       gas: 20000000      //make sure this gas allocation isn't over 20M, which is the max
