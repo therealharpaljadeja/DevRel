@@ -45,10 +45,12 @@ Repository branches can be merged into the master branch once a pull request has
 
 ‌**Developer Relations Team**
 
-* Eric Nakagawa
-* Josh Crites
-* Jarrell James
-* Yaz Khoury
+* Abhinil Agarwal 
+* Nestor Bonilla
 * Brandy Camacho
+* Josh Crites
+* Matthew Hinton
+* Cat Nicholas
+* Eric Nakagawa
 * Joe Nyzio
 
